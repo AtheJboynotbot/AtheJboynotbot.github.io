@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html> 
+   <body>
+       <title>Income Tax Calculator</title>
+       <head>
+    <meta name="viewport" content="with=devide-width, initial-scale=1.0">
+    <title>the CHAD site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+       </head>
+           <section class="simple-background">
+       <div class="texttboxx">
+<body>
+    <div id="payroll-container">
+       <center>
+           
+           
+      <h2>Income Tax Calculator</h2>
+<label for="taxableIncome">Enter Net Taxable Income:</label><br> <input type="number" id="taxableIncome" name="taxableIncome"><br>
+
+<button onclick="calculateTax()">Calculate Tax</button>
+
+<p id="tax"></p> 
+<script> function calculateTax() 
+    { var taxableIncome = document.getElementById("taxableIncome").value; var tax = 0; if (taxableIncome <= 250000) 
+    { tax = 0; } 
+     else if (taxableIncome <= 400000) { tax = 20000 + 0.25 * (taxableIncome - 250000); } 
+     else if (taxableIncome <= 800000) { tax = 30000 + 0.25 * (taxableIncome - 400000); } 
+     else if (taxableIncome <= 2000000) { tax = 130000 + 0.30 * (taxableIncome - 800000); } 
+     else if (taxableIncome <= 8000000) { tax = 490000 + 0.32 * (taxableIncome - 2000000); } 
+     else { tax = 2410000 + 0.35 * (taxableIncome - 8000000); } document.getElementById("tax").innerHTML = "Income Tax: $" + tax.toFixed(2); } 
+           </script> 
+                  <div id="deduction-info">
+            <h3>Deductions per Interval</h3>
+            <table id="deduction-table">
+                <tr>
+                    <th>Income Range (PHP)</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>0 - 250,000</td>
+                    <td>No tax, as it falls within the exempted range.</td>
+                </tr>
+                <tr>
+                    <td>250,001 - 400,000</td>
+                    <td>20% of the excess over 250,000 plus a basic tax of 30,000.</td>
+                </tr>
+                <tr>
+                    <td>400,001 - 800,000</td>
+                    <td>25% of the excess over 400,000 plus a basic tax of 130,000.</td>
+                </tr>
+                <tr>
+                    <td>800,001 - 2,000,000</td>
+                    <td>30% of the excess over 800,000 plus a basic tax of 490,000.</td>
+                </tr>
+                <tr>
+                    <td>2,000,001 - 8,000,000</td>
+                    <td>32% of the excess over 2,000,000 plus a basic tax of 2,410,000.</td>
+                </tr>
+                <tr>
+                    <td>Above 8,000,000</td>
+                    <td>35% of the excess over 8,000,000 plus a basic tax of 2,410,000.</td>
+                </tr>
+            </table>
+        </div>
+                   <div id="real-time-rates">
+            <h3>Real-Time Rates</h3>
+            <p>Deduction Rate: 20%</p>
+
+        </div>
+
+
+           <div class="go-back">
+               <center>
+           <ul>
+            <li>
+           <a href="index.html" ">Return to Homepage</a>  </li>        
+           </ul>
+               </center>
+               </div>
+
+           </center>
+       </div>
+           
+ 
+            
+</body> 
+</html>

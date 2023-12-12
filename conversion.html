@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+       <head>
+    <meta name="viewport" content="with=devide-width, initial-scale=1.0">
+    <title>the CHAD site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+       </head>
+           <section class="simple-background">
+       <div class="texttboxx">
+<body>
+    <div id="payroll-container">
+    
+    <title>Conversion Calculator</title>
+
+    <div class="container">
+        <h1>CONVERSION</h1>
+        <label for="conversion">Select conversion: </label>
+        <select id="conversion" onchange="clearResult()">
+            <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+            <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+            <option value="metersToFeet">Meters to Feet</option>
+            <option value="feetToMeters">Feet to Meters</option>
+        </select>
+        <br><br>
+        <label>Enter a number: </label>
+        <input type="text" id="number" onkeyup="convert()">
+        <br><br>
+        <label for="result">Result: </label>
+        <input type="text" id="result" readonly>
+        <h1 id="result_description"></h1>
+        <br><br>
+
+        <br>
+    </div>
+
+    <script>
+        function convert() {
+            var conversionType = document.getElementById('conversion').value;
+            var number = parseFloat(document.getElementById('number').value);
+            var result = 0;
+            var message;
+
+           switch (conversionType) {
+                case 'celsiusToFahrenheit':
+                    result = (number * (9/5)) + 32;
+                    message =  " °F";
+                    break;
+                case 'fahrenheitToCelsius':
+                    result = (number - 32) * (5/9);
+                    message =  " °C";
+                    break;
+                case 'metersToFeet':
+                    result = number * 3.28084;
+                    message =  " ft";
+                    break;
+                case 'feetToMeters':
+                    result = number / 3.28084;
+                    message =  " m";
+                    break;
+                default:
+                    result = 0;
+            }
+                if (isNaN(number)) {
+                document.getElementById('result').value = 'Enter a number';
+                return;
+            }
+
+            document.getElementById('result').value = Number(result).toLocaleString() + message;
+        }
+
+        function clearResult() {
+            document.getElementById('result').value = '';
+        }
+    </script>
+                   <div class="go-back">
+               <center>
+           <ul>
+            <li>
+           <a href="index.html" ">Return to Homepage</a>  </li>        
+           </ul>
+               </center>
+               </div>
+</body>
+</html>
