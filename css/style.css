@@ -1,0 +1,334 @@
+*
+
+{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Oswald', sans-serif;
+}
+.header{
+    min-height:  100vh;
+    width: 100%;
+    background-color: 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url(assets/img/ezgif-2-3ca8652b0d.gif)
+
+    
+    
+}
+nav{
+
+    display: flex;
+    padding: 0.1% 0.1%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: #ADD8E6;
+    text-decoration: none;
+    font-size: 15px;
+    
+}
+.nav-links ul li::after{
+content: '';
+    width: 0%;
+    height: 2px;
+    background: #d3d3d3;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    width: 30%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+    
+        
+}
+.text-box h1{
+    font-size: 62px;
+    text-shadow: 2px 2px 11px #CFCFCF;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    position: absolute
+    top: 60%;
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 11px #CFCFCF;
+}
+
+.dropbtn {
+  background-color: skyblue;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+    background-size: cover;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 320px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 8px;
+  text-decoration: none;
+  display: block;
+    right: 10;
+}
+
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+
+.dropdown:hover .dropbtn {background-color: blue;}
+.go-back{
+    flex: 1;
+    text-align: center;
+}
+.go-back ul li{
+            list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.go-back ul li a{
+        color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+}
+.go-back ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #d3d3d3;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.go-back ul li:hover::after{
+    width: 100%;
+}
+
+
+
+.nav-links a{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.img {
+  width: auto;
+  height: 150px;
+      object-fit: cover;
+        flex: 1;
+    align-items:  right;
+    
+
+}
+.income-background {
+        min-height:  100vh;
+    width: 100%;
+    background-color: 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url(assets/img/44db938c4d86a7ea3ae51a511304a117.gif);
+}
+.bg-masthead{
+            min-height:  100vh;
+    width: 100%;
+    background-color: 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url(assets/img/bg-masthead.jpg);
+}
+.text-box2c{
+    width: 30%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: #242838;
+    box-shadow:   1px 1px 117px 11px rgba(190,200,255,90);
+    
+        
+}
+
+.calculator {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+.label {
+            display: block;
+        }
+
+.input {
+            width: calc(100% - 18px);
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+.button {
+            font-size: 18px;
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+.button:hover {
+            background-color: #45a049;
+        }
+
+.result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+.a {
+            font-size: 18px;
+            color: #4caf50;
+            text-decoration: none;
+            display: block;
+            margin-top: px;
+        }
+.a:hover {
+            color: #45a049;
+        }
+.aurora{
+        min-height:  100vh;
+    width: 100%;
+    background-color: 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url(assets/img/aurora-borealis-1920x1080.jpg);
+    
+}
+.simple-background{
+    min-height:  100vh;
+    width: 100%;
+    background-color: 
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-image: url(assets/img/black-background.gif);
+}
+.text-box3c{
+        width: 30%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: #242838;
+    box-shadow:   1px 1px 117px 11px rgba(190,255,200,90);
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+ul.no-bullets {
+                color: #FFFFFF;
+    text-decoration: none;
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+
+}
+.texttboxx{            
+    width: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;}
+button {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+
+
+.simpletextbox{
+        width: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: black;
+    box-shadow:   1px 1px 117px 11px rgba(190,255,255,90);}
